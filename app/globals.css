@@ -2,26 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+    h2 {
+        @apply text-3xl text-center font-medium mb-8
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@layer components {
+
+    /* Background Glass Effect */
+    .bg-circle__top-right {
+        @apply bg-[#fdd0d1] absolute top-[2rem] -z-10 right-[122px] h-[31.25rem] w-[28rem] rounded-full blur-[8rem] sm:w-[68.75rem] dark:bg-[#946263]
+    }
+
+    .bg-circle__top-left {
+        @apply bg-[#dbd7fb] absolute top-[-10rem] -z-10 -left-[35rem] h-[31.25rem] w-[50rem] rounded-full blur-[8rem] sm:w-[68.75rem] md:-left-[33rem] lg:-left-[28rem] xl:-left-[15rem] 2xl:-left-[5rem] dark:bg-[#676394]
+    }
+
+    /* .bg-circle__middle-right {
+        @apply bg-[#e2eafb] absolute top-[50%] -z-10 right-[2rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[8rem] sm:w-[68.75rem]
+    } */
+
+    .bg-circle__middle-right {
+        @apply bg-gradient-to-r from-cyan-100 to-blue-400 absolute top-[35%] right-[25%] sm:right-[30%] h-[120px] w-[120px] sm:w-[230px] sm:h-[230px] md:w-[280px] md:h-[280px] rounded-full shadow-sm sm:shadow-md -z-[9]
+    }
+
+    .bg-circle__middle-left {
+        @apply bg-[#fbf4d7] bg-gradient-to-r from-violet-400 to-yellow-100 absolute top-[40%] left-[35%] sm:left-[50%] h-[180px] w-[180px] rounded-full sm:w-[280px] sm:h-[280px] md:w-[350px] md:h-[350px] shadow-sm -z-10
+    }
+
+    /* <---> */
+
+    .nav-container {
+        @apply fixed top-0 h-[4rem] w-full rounded-none border-white bg-white shadow-lg shadow-black/[0.08] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75
+    }
+
+.nav-container__ul {
+    @apply flex flex-wrap w-full h-full justify-center items-center gap-[15px]
+}
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities {
 }
+
