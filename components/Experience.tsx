@@ -11,7 +11,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
-  const { ref } = useActiveInView("Experience");
+  const { ref } = useActiveInView("Experience", 0.3);
   const { theme } = useThemeContext();
 
   return (

@@ -9,7 +9,7 @@ import useActiveInView from "@/hooks/useActiveInView";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-  const { ref } = useActiveInView("Projects");
+  const { ref } = useActiveInView("Projects", 0.2);
 
   return (
     <motion.section
