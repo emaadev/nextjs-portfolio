@@ -48,6 +48,8 @@ export const CustomIconButton = ({
   return (
     <motion.a
       href={href}
+      target="_blank"
+      rel="noreferrer"
       whileHover={{ scale: 1.09 }}
       whileTap={{ scale: 1.05 }}
       transition={{ duration: 0.15 }}
