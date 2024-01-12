@@ -92,7 +92,7 @@ export const techSkills = [
   "CSS3",
   "Bootstrap",
   "SEO",
-  "Objected-Oriented Programming",
+  "Object-Oriented Programming",
   "SASS",
   "JavaScript",
   "TypeScript",
