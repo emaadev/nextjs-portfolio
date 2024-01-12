@@ -87,10 +87,12 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
+export const techSkills = [
   "HTML5",
   "CSS3",
   "Bootstrap",
+  "SEO",
+  "Objected-Oriented Programming",
   "SASS",
   "JavaScript",
   "TypeScript",
@@ -111,6 +113,21 @@ export const skillsData = [
   "Illustrator",
   "Figma",
   "AdobeXd",
+  "Responsive Design",
+] as const;
+
+export const softSkills = [
+  "Responsibility",
+  "Communication",
+  "Critical Thinking",
+  "Assertiveness",
+  "Initiative",
+  "Punctuality",
+  "Empathy",
+  "Ease of Learning",
+  "Time Management",
+  "Kindness",
+  "Ease of Problem Solving",
 ] as const;
 
 export const experiencesData = [
