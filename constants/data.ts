@@ -43,7 +43,7 @@ export const projectsData = [
   {
     title: "Products Web Scrapper",
     description:
-      "Full-Stack App with a custom API Rest for a Company. It provides an Average Price the products and gives some specific data.",
+      "Full-Stack App with a custom API Rest for a Company. I developed the REST API on Python, you can see the code in GitHub.",
     tags: ["Next.js", "TypeScript", "Python", "TailwindCSS"],
     imageUrl: webScrapperApp,
     github: "https://github.com/emaadev/web-scrapper-app",
