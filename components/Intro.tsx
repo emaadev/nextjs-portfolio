@@ -38,7 +38,7 @@ const Intro = () => {
             src={ProfileImg}
             alt="Emanuel Nuñez Img"
             priority={true}
-            className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl dark:border-white/60"
+            className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl dark:border-white/60"
           />
         </motion.div>
 
