@@ -8,6 +8,8 @@ import ProfileImg from "@/public/profile.png";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import codeIcon from "../public/code-icon.gif";
+
 import Divider from "./shared/Divider";
 import {
   CustomBlackButton,
@@ -17,7 +19,6 @@ import {
 
 import useActiveInView from "@/hooks/useActiveInView";
 import { useActiveNavContext } from "@/hooks/useActiveNavContext";
-import CodeIcon from "./icons/CodeIcon";
 
 const Intro = () => {
   const { ref } = useActiveInView("Home", 0.5);
@@ -44,7 +45,7 @@ const Intro = () => {
             />
           </motion.div>
 
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -53,10 +54,10 @@ const Intro = () => {
               delay: 0.1,
               duration: 0.7,
             }}
-            className="absolute right-0 bottom-0 text-[30px] lg:text-[40px] bg-white shadow-md rounded-full p-2"
+            className="absolute right-0 bottom-0 text-[30px] lg:text-[40px] bg-white shadow-md rounded-full p-2 lg:w-14 w-10 "
           >
-            <CodeIcon size={40} />
-          </motion.div> */}
+            <Image src={codeIcon} alt="Gif" />
+          </motion.div>
         </div>
 
         <section className="flex lg:flex-1 flex-col justify-center items-center lg:justify-start lg:items-start lg:px-[20px]">
