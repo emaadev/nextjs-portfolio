@@ -5,10 +5,11 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
 import webScrapperApp from "@/public/web-scrapper-app.png";
-import carhubApp from "@/public/carhub-app.png";
+import carhubApp from "@/public/carhub-rentcar.png";
 import postItApp from "@/public/postit-app.png";
-import hoobankApp from "@/public/hoobank-app.png";
 import comingSoon from "@/public/coming-soon.jpg";
+import ecommerceAdminPanel from "@/public/admin-ecommerce-panel.png";
+import ecommerceClientSide from "@/public/client-eccomerce-website.png";
 
 // import livechatApp from "@/public/livechat-app.png";
 
@@ -41,6 +42,25 @@ export const links = [
 
 export const webDevelopmentData = [
   {
+    title: "E-Commerce Client Side",
+    description:
+      "Next.js professional E-Commerce TailwindCSS and TypeScript. This have the client side of the project. The admin panel is in GitHub",
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "Axios", "HeadlessUI"],
+    imageUrl: ecommerceClientSide,
+    github:
+      "https://github.com/emaadev/nextjs-mysql-ecommerce-client/blob/main/package.json",
+    website: "https://nextjs-mysql-ecommerce-client.vercel.app/",
+  },
+  {
+    title: "Professional Admin Panel",
+    description:
+      "Next.js professional Admin Panel using TailwindCSS, TypeScript and MySQL for database with an Integration of Stripe Payments. This have a custom Dashboard and Administration for each page in the website.",
+    tags: ["Next.js", "TypeScript", "MySQL", "axios", "TailwindCSS", "Shadcn"],
+    imageUrl: ecommerceAdminPanel,
+    github: "https://github.com/emaadev/nextjs-mysql-ecommerce-admin",
+    website: "https://nextjs-mysql-ecommerce-admin.vercel.app/",
+  },
+  {
     title: "Products Web Scrapper",
     description:
       "Full-Stack App with a custom API Rest for a Company. I developed the REST API on Python, you can see the code in GitHub.",
@@ -67,15 +87,15 @@ export const webDevelopmentData = [
     github: "https://github.com/emaadev/postit-social-app",
     website: "https://postit-nine-eta.vercel.app/",
   },
-  {
-    title: "Hoobank",
-    description:
-      "Front-End project for a Digital Bank including the UX Design. See the main info of the Company and some user recomendations.",
-    tags: ["ReactJS", "TailwindCSS", "Figma", "Photoshop", "Illustrator"],
-    imageUrl: hoobankApp,
-    github: "https://github.com/emaadev/hoobank",
-    website: "https://emaadev.github.io/hoobank/",
-  },
+  // {
+  //   title: "Hoobank",
+  //   description:
+  //     "Front-End project for a Digital Bank including the UX Design. See the main info of the Company and some user recomendations.",
+  //   tags: ["ReactJS", "TailwindCSS", "Figma", "Photoshop", "Illustrator"],
+  //   imageUrl: hoobankApp,
+  //   github: "https://github.com/emaadev/hoobank",
+  //   website: "https://emaadev.github.io/hoobank/",
+  // },
   // {
   //   title: "ChatApp",
   //   description:
