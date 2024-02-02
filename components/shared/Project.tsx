@@ -61,6 +61,8 @@ const Project = ({
             ) : (
               <a
                 href={github}
+                target="_blank"
+                rel="noreferrer"
                 className="flex justify-center gap-2 items-center text-gray-300 hover:text-white"
               >
                 GitHub <FaGithub />
@@ -68,6 +70,8 @@ const Project = ({
             )}
             <a
               href={website}
+              target="_blank"
+              rel="noreferrer"
               className="flex justify-center gap-2 items-center text-gray-300 hover:text-white"
             >
               {tags.includes("Photoshop" || "AdobeXd")
