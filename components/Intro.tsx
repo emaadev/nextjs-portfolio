@@ -44,7 +44,7 @@ const Intro = () => {
             />
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -56,21 +56,7 @@ const Intro = () => {
             className="absolute right-0 bottom-0 text-[30px] lg:text-[40px] bg-white shadow-md rounded-full p-2"
           >
             <CodeIcon size={40} />
-          </motion.div>
-
-          {/* <motion.span
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-            className="absolute right-0 bottom-0 text-[30px] lg:text-[40px]"
-          >
-            👋
-          </motion.span> */}
+          </motion.div> */}
         </div>
 
         <section className="flex lg:flex-1 flex-col justify-center items-center lg:justify-start lg:items-start lg:px-[20px]">
