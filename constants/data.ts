@@ -1,16 +1,16 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { SiAdobephotoshop } from "react-icons/si";
 import { MdDesignServices } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
-import { LuGraduationCap } from "react-icons/lu";
 
 import webScrapperApp from "@/public/web-scrapper-app.png";
 import carhubApp from "@/public/carhub-app.png";
 import postItApp from "@/public/postit-app.png";
-import livechatApp from "@/public/livechat-app.png";
 import hoobankApp from "@/public/hoobank-app.png";
+import comingSoon from "@/public/coming-soon.jpg";
+
+// import livechatApp from "@/public/livechat-app.png";
 
 export const links = [
   {
@@ -39,7 +39,7 @@ export const links = [
   },
 ] as const;
 
-export const projectsData = [
+export const webDevelopmentData = [
   {
     title: "Products Web Scrapper",
     description:
@@ -76,16 +76,28 @@ export const projectsData = [
     github: "https://github.com/emaadev/hoobank",
     website: "https://emaadev.github.io/hoobank/",
   },
+  // {
+  //   title: "ChatApp",
+  //   description:
+  //     "Full-Stack Project with Chat Stream, including login validation, server management and instant messaging.",
+  //   tags: ["ReactJS", "NodeJS", "Stream Chat", "CSS", "Figma"],
+  //   imageUrl: livechatApp,
+  //   github: "https://github.com/emaadev/live-chat-app",
+  //   website: "https://live-chat-app-project.netlify.app/",
+  // },
+];
+
+export const grahicDesignData = [
   {
-    title: "ChatApp",
+    title: "Coming Soon...",
     description:
-      "Full-Stack Project with Chat Stream, including login validation, server management and instant messaging.",
-    tags: ["ReactJS", "NodeJS", "Stream Chat", "CSS", "Figma"],
-    imageUrl: livechatApp,
-    github: "https://github.com/emaadev/live-chat-app",
-    website: "https://live-chat-app-project.netlify.app/",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam aliquam ipsum necessitatibus.",
+    tags: ["Photoshop", "Illustrator", "AdobeXd", "Figma", "UX/UI Design"],
+    imageUrl: comingSoon,
+    github: "",
+    website: "https://web-scrapper-app-omega.vercel.app/",
   },
-] as const;
+];
 
 export const techSkills = [
   "HTML5",
@@ -132,10 +144,10 @@ export const softSkills = [
 
 export const experiencesData = [
   {
-    title: "Freelancer | Full-Stack Development",
+    title: "Freelancer | Front-End to Full-Stack Dev",
     location: "Bs As, Argentina",
-    description:
-      "I'm studying Full-Stack Development working as a Front-End & Graphic Designer freelance. My stack includes React, Next.js, TypeScript, TailwindCSS and Python. I'm now looking to full-time opportunities.",
+    description: `I'm working as a Front-End Developer freelance while I'm studying Full-Stack Development. My stack includes React, Next.js, TypeScript, TailwindCSS and Python. 
+    \n I'm now looking to full-time opportunities.`,
     keyAchievements: [],
     icon: React.createElement(SiNextdotjs),
     date: "2023 - present",

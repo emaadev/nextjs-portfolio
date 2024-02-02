@@ -1,4 +1,5 @@
-import { links, projectsData } from "@/constants/data";
+import { links } from "@/constants/data";
+import { StaticImageData } from "next/image";
 
 export interface CustomButtonsProps {
   children: React.ReactNode;
@@ -7,7 +8,14 @@ export interface CustomButtonsProps {
   onClick: any;
 }
 
-export type ProjectProps = (typeof projectsData)[number];
+export interface ProjectProps {
+  title: string;
+  description: string;
+  tags: Array<string>;
+  imageUrl: StaticImageData;
+  github: string;
+  website: string;
+}
 
 export type SectionNameProps = (typeof links)[number]["name"];
 

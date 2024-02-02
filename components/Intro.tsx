@@ -68,15 +68,15 @@ const Intro = () => {
           Front-End Developer & Graphic Designer
         </span>{" "}
         <br className="sm:hidden" />
-        with <span className="font-bold">+3 years</span> of experience. <br />{" "}
+        with <span className="font-bold">+4 years</span> of experience. <br />{" "}
         <br />
         My focus is now{" "}
         <span className="underline font-bold">React (Next. js)</span> to be{" "}
         <span className="underline font-bold">Full-Stack Developer</span>.{" "}
-        <br />
+        {/* <br />
         I'm also learning <span className="font-bold">
           iOS Development
-        </span> on <span className="font-bold">Swift</span> 📚
+        </span> on <span className="font-bold">Swift</span> 📚 */}
       </motion.h1>
 
       <motion.div

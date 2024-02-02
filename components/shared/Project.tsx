@@ -30,10 +30,13 @@ const Project = ({
     <>
       <motion.div
         ref={ref}
+        initial={{ opacity: 0, x: 50, originZ: 0.7 }}
+        animate={{ opacity: 1, x: 0, originZ: 1 }}
+        transition={{ duration: 0.4 }}
         style={{ scale: scaleProgress, opacity: opacityProgress }}
         className="mb-[35px]"
       >
-        <section className="group relative bg-white bg-opacity-5 hover:bg-opacity-80 backdrop-blur-[5px] max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 rounded-[12px] shadow-xl transition dark:bg-gray-400 dark:bg-opacity-70">
+        <section className="group relative bg-white bg-opacity-40 hover:bg-opacity-80 backdrop-blur-[5px] max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 rounded-[12px] shadow-xl transition dark:bg-gray-400 dark:bg-opacity-70">
           <div className="flex flex-col justify-between py-4 px-5 sm:pl-10 sm:pr-2 sm:py-8 sm:max-w-[50%] h-full">
             <h3 className="text-2xl font-semibold dark:text-white">{title}</h3>
             <p className="mt-2 mb-0 leading-relaxed text-gray-700 dark:text-white">
@@ -53,17 +56,24 @@ const Project = ({
           </div>
 
           <div className="relative mt-2 sm:mt-0 sm:absolute flex justify-around items-center z-10 p-2 sm:-bottom-10 sm:-right-10 sm:rounded-tl-[12px] shadow-xl backdrop-blur-[0.2rem] bg-black/[0.8] shadow-gray-800 sm:w-[250px] sm:h-[50px] transition-all sm:opacity-0 sm:group-hover:opacity-100 sm:group-hover:-translate-y-10 sm:group-hover:-translate-x-10 sm:group-hover:duration-300">
-            <a
-              href={github}
-              className="flex justify-center gap-2 items-center text-gray-300 hover:text-white"
-            >
-              GitHub <FaGithub />
-            </a>
+            {tags.includes("Photoshop" || "AdobeXd") ? (
+              ""
+            ) : (
+              <a
+                href={github}
+                className="flex justify-center gap-2 items-center text-gray-300 hover:text-white"
+              >
+                GitHub <FaGithub />
+              </a>
+            )}
             <a
               href={website}
               className="flex justify-center gap-2 items-center text-gray-300 hover:text-white"
             >
-              Website <RiExternalLinkLine />
+              {tags.includes("Photoshop" || "AdobeXd")
+                ? "Live Mockup"
+                : "Website"}
+              <RiExternalLinkLine />
             </a>
           </div>
 
