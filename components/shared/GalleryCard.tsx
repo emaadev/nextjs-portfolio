@@ -31,9 +31,9 @@ const GalleryCard = ({
     >
       <Image src={image} alt="CarHub App" className="img" />
 
-      <div className="textBox">
+      <div className="textBox px-4 text-center">
         <h4 className="text-[20px] font-semibold -mb-[12px]">{title}</h4>
-        <span className="text-[16px] text-gray-200">{description}</span>
+        <span className="text-[14px] text-gray-200">{description}</span>
         <a
           href={href}
           target="_blank"

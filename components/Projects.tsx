@@ -15,12 +15,13 @@ import useActiveInView from "@/hooks/useActiveInView";
 import { webDevelopmentData } from "@/constants/data";
 
 import portfolioDesign from "@/public/portfolio-design.jpg";
+import codingMetricsBranding from "@/public/coding-metrics-branding.jpg";
 import comingSoon from "@/public/coming-soon.jpg";
 
 const Projects = () => {
   const { ref } = useActiveInView("Projects", 0.2);
 
-  const [active, setActive] = useState<string>("graphic-design");
+  const [active, setActive] = useState<string>("web-development");
 
   return (
     <motion.section
@@ -83,6 +84,14 @@ const Projects = () => {
               href="https://xd.adobe.com/view/2608fd90-7c10-410a-9a89-7273ec911f40-735b/"
               image={portfolioDesign}
               textButton="Go To Website"
+            />
+
+            <GalleryCard
+              title="Codign Metrics Branding"
+              description="Complete branding for a Digital Marketing Company. Designed all the branding and social media posts."
+              href="/coding-metrics.pdf"
+              image={codingMetricsBranding}
+              textButton="Download PDF"
             />
 
             <GalleryCard

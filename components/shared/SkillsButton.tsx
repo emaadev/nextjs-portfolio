@@ -21,7 +21,7 @@ const SkillsButton = ({
 
   return (
     <button
-      className={`flex gap-2 items-center justify-between relative rounded-full py-2 px-6 transition ${
+      className={`flex gap-2 items-center justify-between relative rounded-full py-2 px-6 transition cursor-pointer ${
         active === id
           ? "bg-gray-600 text-white"
           : "bg-transparent text-gray-600 hover:bg-gray-200"
