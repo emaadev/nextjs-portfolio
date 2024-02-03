@@ -8,7 +8,7 @@ import { MdOutlineDesignServices } from "react-icons/md";
 
 import Project from "@/components/shared/Project";
 import SkillsButton from "@/components/shared/SkillsButton";
-import GaleryCard from "./shared/GaleryCard";
+import GalleryCard from "./shared/GalleryCard";
 
 import useActiveInView from "@/hooks/useActiveInView";
 
@@ -77,7 +77,7 @@ const Projects = () => {
 
         {active === "graphic-design" && (
           <section className="mx-auto w-full flex flex-wrap gap-4 mb-8">
-            <GaleryCard
+            <GalleryCard
               title="UX/UI Design"
               description="Portfolio design built with AdobeXd"
               href="https://xd.adobe.com/view/2608fd90-7c10-410a-9a89-7273ec911f40-735b/"
@@ -85,7 +85,7 @@ const Projects = () => {
               textButton="Go To Website"
             />
 
-            <GaleryCard
+            <GalleryCard
               title="Coming Soon..."
               description="Uploading all my projects 🚀"
               href=""

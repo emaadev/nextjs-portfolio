@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 import { BsArrowRight } from "react-icons/bs";
 
-import "./GaleryCard.css";
+import "./GalleryCard.css";
 
-export interface GaleryCardProps {
+export interface GalleryCardProps {
   title: string;
   description: string;
   href: string;
@@ -14,18 +14,18 @@ export interface GaleryCardProps {
   textButton: string;
 }
 
-const GaleryCard = ({
+const GalleryCard = ({
   title,
   description,
   href,
   image,
   textButton,
-}: GaleryCardProps) => {
+}: GalleryCardProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.2 }}
+      initial={{ opacity: 0, x: 50, originZ: 0.7 }}
+      animate={{ opacity: 1, x: 0, originZ: 1 }}
+      transition={{ duration: 0.4 }}
       whileHover={{ scale: 1.05, rotate: "-1deg" }}
       className="card shadow-lg"
     >
@@ -51,4 +51,4 @@ const GaleryCard = ({
   );
 };
 
-export default GaleryCard;
+export default GalleryCard;
