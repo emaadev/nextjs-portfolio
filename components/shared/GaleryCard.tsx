@@ -1,5 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
+import { motion } from "framer-motion";
+
 import { BsArrowRight } from "react-icons/bs";
 
 import "./GaleryCard.css";
@@ -20,7 +22,13 @@ const GaleryCard = ({
   textButton,
 }: GaleryCardProps) => {
   return (
-    <div className="card shadow-lg">
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.2 }}
+      whileHover={{ scale: 1.05, rotate: "-1deg" }}
+      className="card shadow-lg"
+    >
       <Image src={image} alt="CarHub App" className="img" />
 
       <div className="textBox">
@@ -39,7 +47,7 @@ const GaleryCard = ({
           />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
