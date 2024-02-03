@@ -3,20 +3,24 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import Project from "@/components/shared/Project";
-import SkillsButton from "@/components/shared/SkillsButton";
-
 import { FaCode } from "react-icons/fa6";
 import { MdOutlineDesignServices } from "react-icons/md";
 
+import Project from "@/components/shared/Project";
+import SkillsButton from "@/components/shared/SkillsButton";
+import GaleryCard from "./shared/GaleryCard";
+
 import useActiveInView from "@/hooks/useActiveInView";
 
-import { grahicDesignData, webDevelopmentData } from "@/constants/data";
+import { webDevelopmentData } from "@/constants/data";
+
+import portfolioDesign from "@/public/portfolio-design.jpg";
+import comingSoon from "@/public/coming-soon.jpg";
 
 const Projects = () => {
   const { ref } = useActiveInView("Projects", 0.2);
 
-  const [active, setActive] = useState<string>("web-development");
+  const [active, setActive] = useState<string>("graphic-design");
 
   return (
     <motion.section
@@ -64,12 +68,32 @@ const Projects = () => {
             </React.Fragment>
           ))}
 
-        {active === "graphic-design" &&
+        {/* {active === "graphic-design" &&
           grahicDesignData.map((project, index) => (
             <React.Fragment key={index}>
               <Project {...project} />
             </React.Fragment>
-          ))}
+          ))} */}
+
+        {active === "graphic-design" && (
+          <section className="mx-auto w-full flex flex-wrap gap-4 mb-8">
+            <GaleryCard
+              title="UX/UI Design"
+              description="Portfolio design built with AdobeXd"
+              href="https://xd.adobe.com/view/2608fd90-7c10-410a-9a89-7273ec911f40-735b/"
+              image={portfolioDesign}
+              textButton="Go To Website"
+            />
+
+            <GaleryCard
+              title="Coming Soon..."
+              description="Uploading all my projects 🚀"
+              href=""
+              image={comingSoon}
+              textButton="Uploading"
+            />
+          </section>
+        )}
       </div>
 
       <div className="m-auto flex items-center justify-center gap-2">

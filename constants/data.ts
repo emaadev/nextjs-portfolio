@@ -117,6 +117,15 @@ export const grahicDesignData = [
     github: "",
     website: "https://web-scrapper-app-omega.vercel.app/",
   },
+  {
+    title: "Creating & Uploading Section...",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam aliquam ipsum necessitatibus.",
+    tags: ["Photoshop", "Illustrator", "AdobeXd", "Figma", "UX/UI Design"],
+    imageUrl: comingSoon,
+    github: "",
+    website: "https://web-scrapper-app-omega.vercel.app/",
+  },
 ];
 
 export const techSkills = [
