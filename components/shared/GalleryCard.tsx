@@ -27,11 +27,11 @@ const GalleryCard = ({
       animate={{ opacity: 1, x: 0, originZ: 1 }}
       transition={{ duration: 0.4 }}
       whileHover={{ scale: 1.05, rotate: "-1deg" }}
-      className="card shadow-lg"
+      className="card shadow-lg lg:w-[350px] lg:h-[180px]"
     >
       <Image src={image} alt="CarHub App" className="img" />
 
-      <div className="textBox px-4 text-center">
+      <div className="textBox text-center">
         <h4 className="text-[20px] font-semibold -mb-[12px]">{title}</h4>
         <span className="text-[14px] text-gray-200">{description}</span>
         <a

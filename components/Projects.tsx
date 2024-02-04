@@ -30,7 +30,7 @@ const Projects = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6 }}
-      className="relative scroll-mt-28 px-4 sm:px-8 mb-20"
+      className="relative scroll-mt-28 px-2 sm:px-6 mb-20"
     >
       <motion.div
         animate={{ x: [0, 40, 0] }}

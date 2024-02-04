@@ -38,7 +38,9 @@ const Project = ({
       >
         <section className="group relative bg-white bg-opacity-40 hover:bg-opacity-80 backdrop-blur-[5px] max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 rounded-[12px] shadow-xl transition dark:bg-gray-400 dark:bg-opacity-70">
           <div className="flex flex-col justify-between py-4 px-5 sm:pl-10 sm:pr-2 sm:py-8 sm:max-w-[50%] h-full">
-            <h3 className="text-2xl font-semibold dark:text-white">{title}</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold dark:text-white">
+              {title}
+            </h3>
             <p className="mt-2 mb-0 leading-relaxed text-gray-700 dark:text-white">
               {description}
             </p>

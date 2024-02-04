@@ -34,11 +34,11 @@
     /* <---> */
 
     .nav-container {
-        @apply fixed top-0 h-[4rem] w-full rounded-none border-white bg-white shadow-lg shadow-black/[0.08] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75
+        @apply fixed top-0 h-[5rem] w-full rounded-none border-white bg-white shadow-lg shadow-black/[0.08] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75
     }
 
 .nav-container__ul {
-    @apply flex flex-wrap w-full h-full justify-center items-center gap-[15px]
+    @apply flex flex-wrap w-full h-full justify-center items-center gap-[10px] sm:gap-[15px]
 }
 }
 
