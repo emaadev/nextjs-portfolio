@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { Toaster } from "react-hot-toast";
 
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import Header from "@/components/Header";
 import ActiveNavContextProvider from "@/context/ActiveNavContextProvider";
@@ -42,6 +43,7 @@ export default function RootLayout({
           </ActiveNavContextProvider>
         </ThemeContextProvider>
 
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>
