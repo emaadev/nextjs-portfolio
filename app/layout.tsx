@@ -2,6 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Toaster } from "react-hot-toast";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import Header from "@/components/Header";
 import ActiveNavContextProvider from "@/context/ActiveNavContextProvider";
 import Footer from "@/components/Footer";
@@ -39,6 +41,8 @@ export default function RootLayout({
             <ThemeSwitch />
           </ActiveNavContextProvider>
         </ThemeContextProvider>
+
+        <Analytics />
       </body>
     </html>
   );
