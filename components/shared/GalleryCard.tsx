@@ -26,7 +26,7 @@ const GalleryCard = ({
       whileHover={{ scale: 1.05, rotate: "-1deg" }}
       className="card shadow-lg lg:w-[350px] lg:h-[180px]"
     >
-      <Image priority={true} src={image} alt="CarHub App" className="img" />
+      <Image src={image} alt="CarHub App" className="img" />
 
       <div className="textBox text-center p-2">
         <h4 className="text-[20px] font-semibold -mb-[12px]">{title}</h4>

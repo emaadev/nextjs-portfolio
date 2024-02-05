@@ -56,7 +56,7 @@ const Intro = () => {
             }}
             className="absolute right-0 bottom-0 text-[30px] lg:text-[40px] bg-white shadow-md rounded-full p-2 lg:w-14 w-10 "
           >
-            <Image src={codeIcon} alt="Gif" />
+            <Image src={codeIcon} priority={true} alt="Gif" />
           </motion.div>
         </div>
 
