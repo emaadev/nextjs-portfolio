@@ -23,9 +23,6 @@ const GalleryCard = ({
 }: GalleryCardProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 50, originZ: 0.7 }}
-      animate={{ opacity: 1, x: 0, originZ: 1 }}
-      transition={{ duration: 0.4 }}
       whileHover={{ scale: 1.05, rotate: "-1deg" }}
       className="card shadow-lg lg:w-[350px] lg:h-[180px]"
     >

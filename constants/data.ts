@@ -4,12 +4,12 @@ import { MdDesignServices } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
-import webScrapperApp from "@/public/web-scrapper-app.png";
-import carhubApp from "@/public/carhub-rentcar.png";
-import postItApp from "@/public/postit-app.png";
-import comingSoon from "@/public/coming-soon.jpg";
-import ecommerceAdminPanel from "@/public/admin-ecommerce-panel.png";
-import ecommerceClientSide from "@/public/client-eccomerce-website.png";
+import webScrapperApp from "@/public/compressed/web-scrapper-app.png";
+import carhubApp from "@/public/compressed/carhub-rentcar.png";
+import postItApp from "@/public/compressed/postit-app.png";
+import comingSoon from "@/public/compressed/coming-soon.jpg";
+import ecommerceAdminPanel from "@/public/compressed/admin-ecommerce-panel.png";
+import ecommerceClientSide from "@/public/compressed/client-eccomerce-website.png";
 
 // import livechatApp from "@/public/livechat-app.png";
 

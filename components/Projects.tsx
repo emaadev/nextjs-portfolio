@@ -14,10 +14,10 @@ import useActiveInView from "@/hooks/useActiveInView";
 
 import { webDevelopmentData } from "@/constants/data";
 
-import portfolioDesign from "@/public/portfolio-design.jpg";
-import codingMetricsBranding from "@/public/coding-metrics-branding.jpg";
-import aviationEcommerce from "@/public/aviation-store.jpg";
-import comingSoon from "@/public/coming-soon.jpg";
+import portfolioDesign from "@/public/compressed/portfolio-design.jpg";
+import codingMetricsBranding from "@/public/compressed/coding-metrics-branding.jpg";
+import aviationEcommerce from "@/public/compressed/aviation-store.jpg";
+import comingSoon from "@/public/compressed/coming-soon.jpg";
 
 const Projects = () => {
   const { ref } = useActiveInView("Projects", 0.2);
@@ -78,7 +78,14 @@ const Projects = () => {
           ))} */}
 
         {active === "graphic-design" && (
-          <section className="mx-auto w-full flex flex-wrap gap-4 mb-8">
+          <motion.section
+            initial={{ opacity: 0, x: 50, originZ: 0.7 }}
+            animate={{ opacity: 1, x: 0, originZ: 1 }}
+            transition={{ duration: 0.4 }}
+            className={`mx-auto w-full flex flex-wrap gap-4 mb-8 ${
+              active === "graphic-design" ? "sm:flex" : "hidden"
+            }`}
+          >
             <GalleryCard
               title="UX/UI Design"
               description="E-Commerce mockup design for a real Aviation's Company located in Argentina. Developing project in progress."
@@ -110,7 +117,7 @@ const Projects = () => {
               image={comingSoon}
               textButton="Uploading"
             />
-          </section>
+          </motion.section>
         )}
       </div>
 

@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import ProfileImg from "@/public/profile.png";
+import ProfileImg from "@/public/compressed/profile.png";
 
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import codeIcon from "../public/code-icon.gif";
+import codeIcon from "../public/compressed/code-icon.gif";
 
 import Divider from "./shared/Divider";
 import {
