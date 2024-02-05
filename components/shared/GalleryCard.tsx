@@ -31,7 +31,7 @@ const GalleryCard = ({
     >
       <Image src={image} alt="CarHub App" className="img" />
 
-      <div className="textBox text-center">
+      <div className="textBox text-center p-2">
         <h4 className="text-[20px] font-semibold -mb-[12px]">{title}</h4>
         <span className="text-[14px] text-gray-200">{description}</span>
         <a

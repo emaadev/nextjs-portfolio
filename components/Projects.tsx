@@ -16,6 +16,7 @@ import { webDevelopmentData } from "@/constants/data";
 
 import portfolioDesign from "@/public/portfolio-design.jpg";
 import codingMetricsBranding from "@/public/coding-metrics-branding.jpg";
+import aviationEcommerce from "@/public/aviation-store.jpg";
 import comingSoon from "@/public/coming-soon.jpg";
 
 const Projects = () => {
@@ -80,9 +81,9 @@ const Projects = () => {
           <section className="mx-auto w-full flex flex-wrap gap-4 mb-8">
             <GalleryCard
               title="UX/UI Design"
-              description="Portfolio design built with AdobeXd"
-              href="https://xd.adobe.com/view/2608fd90-7c10-410a-9a89-7273ec911f40-735b/"
-              image={portfolioDesign}
+              description="E-Commerce mockup design for a real Aviation's Company located in Argentina. Developing project in progress."
+              href="https://xd.adobe.com/view/1e294fd1-031d-4ef8-be96-ec1fe6d1429a-4b7a/"
+              image={aviationEcommerce}
               textButton="Go To Website"
             />
 
@@ -92,6 +93,14 @@ const Projects = () => {
               href="/coding-metrics.pdf"
               image={codingMetricsBranding}
               textButton="Download PDF"
+            />
+
+            <GalleryCard
+              title="UX/UI Design"
+              description="Portfolio design built with AdobeXd"
+              href="https://xd.adobe.com/view/2608fd90-7c10-410a-9a89-7273ec911f40-735b/"
+              image={portfolioDesign}
+              textButton="Go To Website"
             />
 
             <GalleryCard
