@@ -30,9 +30,6 @@ const Project = ({
     <>
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, x: 50, originZ: 0.7 }}
-        animate={{ opacity: 1, x: 0, originZ: 1 }}
-        transition={{ duration: 0.4 }}
         style={{ scale: scaleProgress, opacity: opacityProgress }}
         className="mb-[35px]"
       >

@@ -62,64 +62,59 @@ const Projects = () => {
         </SkillsButton>
       </div>
 
-      <div>
-        {active === "web-development" &&
-          webDevelopmentData.map((project, index) => (
-            <React.Fragment key={index}>
-              <Project {...project} />
-            </React.Fragment>
+      <>
+        <motion.section
+          initial={{ opacity: 0, x: 50, originZ: 0.7 }}
+          animate={{ opacity: 1, x: 0, originZ: 1 }}
+          transition={{ duration: 0.4 }}
+          className={`${active === "web-development" ? "sm:block" : "hidden"}`}
+        >
+          {webDevelopmentData.map((project, index) => (
+            <Project key={index} {...project} />
           ))}
+        </motion.section>
 
-        {/* {active === "graphic-design" &&
-          grahicDesignData.map((project, index) => (
-            <React.Fragment key={index}>
-              <Project {...project} />
-            </React.Fragment>
-          ))} */}
+        <motion.section
+          initial={{ opacity: 0, x: 50, originZ: 0.7 }}
+          animate={{ opacity: 1, x: 0, originZ: 1 }}
+          transition={{ duration: 0.4 }}
+          className={`mx-auto w-full flex flex-wrap gap-4 mb-8 ${
+            active === "graphic-design" ? "sm:flex" : "hidden"
+          }`}
+        >
+          <GalleryCard
+            title="UX/UI Design"
+            description="E-Commerce mockup design for a real Aviation's Company located in Argentina. Developing project in progress."
+            href="https://xd.adobe.com/view/1e294fd1-031d-4ef8-be96-ec1fe6d1429a-4b7a/"
+            image={aviationEcommerce}
+            textButton="Go To Website"
+          />
 
-        {active === "graphic-design" && (
-          <motion.section
-            initial={{ opacity: 0, x: 50, originZ: 0.7 }}
-            animate={{ opacity: 1, x: 0, originZ: 1 }}
-            transition={{ duration: 0.4 }}
-            className={`mx-auto w-full flex flex-wrap gap-4 mb-8 ${
-              active === "graphic-design" ? "sm:flex" : "hidden"
-            }`}
-          >
-            <GalleryCard
-              title="UX/UI Design"
-              description="E-Commerce mockup design for a real Aviation's Company located in Argentina. Developing project in progress."
-              href="https://xd.adobe.com/view/1e294fd1-031d-4ef8-be96-ec1fe6d1429a-4b7a/"
-              image={aviationEcommerce}
-              textButton="Go To Website"
-            />
+          <GalleryCard
+            title="Codign Metrics Branding"
+            description="Complete branding for a Digital Marketing Company. Designed all the branding and social media posts."
+            href="/coding-metrics.pdf"
+            image={codingMetricsBranding}
+            textButton="Download PDF"
+          />
 
-            <GalleryCard
-              title="Codign Metrics Branding"
-              description="Complete branding for a Digital Marketing Company. Designed all the branding and social media posts."
-              href="/coding-metrics.pdf"
-              image={codingMetricsBranding}
-              textButton="Download PDF"
-            />
+          <GalleryCard
+            title="UX/UI Design"
+            description="Portfolio design built with AdobeXd"
+            href="https://xd.adobe.com/view/2608fd90-7c10-410a-9a89-7273ec911f40-735b/"
+            image={portfolioDesign}
+            textButton="Go To Website"
+          />
 
-            <GalleryCard
-              title="UX/UI Design"
-              description="Portfolio design built with AdobeXd"
-              href="https://xd.adobe.com/view/2608fd90-7c10-410a-9a89-7273ec911f40-735b/"
-              image={portfolioDesign}
-              textButton="Go To Website"
-            />
-
-            <GalleryCard
-              title="Coming Soon..."
-              description="Uploading all my projects 🚀"
-              href=""
-              image={comingSoon}
-              textButton="Uploading"
-            />
-          </motion.section>
-        )}
-      </div>
+          <GalleryCard
+            title="Coming Soon..."
+            description="Uploading all my projects 🚀"
+            href=""
+            image={comingSoon}
+            textButton="Uploading"
+          />
+        </motion.section>
+      </>
 
       <div className="m-auto flex items-center justify-center gap-2">
         <div
