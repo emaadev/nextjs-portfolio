@@ -23,7 +23,7 @@ import comingSoon from "@/public/compressed/coming-soon.jpg";
 const Projects = () => {
   const { ref } = useActiveInView("Projects", 0.2);
 
-  const [active, setActive] = useState<string>("graphic-design");
+  const [active, setActive] = useState<string>("web-development");
 
   return (
     <motion.section
