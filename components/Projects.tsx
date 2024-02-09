@@ -15,14 +15,15 @@ import useActiveInView from "@/hooks/useActiveInView";
 import { webDevelopmentData } from "@/constants/data";
 
 import portfolioDesign from "@/public/compressed/portfolio-design.jpg";
-import codingMetricsBranding from "@/public/compressed/coding-metrics-branding.jpg";
+import codingMetricsBranding from "@/public/compressed/coding-metrics.jpg";
+import oasisDelSaberBranding from "@/public/compressed/oasis-del-saber.jpg";
 import aviationEcommerce from "@/public/compressed/aviation-store.jpg";
 import comingSoon from "@/public/compressed/coming-soon.jpg";
 
 const Projects = () => {
   const { ref } = useActiveInView("Projects", 0.2);
 
-  const [active, setActive] = useState<string>("web-development");
+  const [active, setActive] = useState<string>("graphic-design");
 
   return (
     <motion.section
@@ -78,7 +79,7 @@ const Projects = () => {
           initial={{ opacity: 0, x: 50, originZ: 0.7 }}
           animate={{ opacity: 1, x: 0, originZ: 1 }}
           transition={{ duration: 0.4 }}
-          className={`mx-auto w-full flex flex-wrap gap-4 mb-8 ${
+          className={`flex flex-wrap justify-center mx-auto w-[70%] gap-4 mb-8 ${
             active === "graphic-design" ? "sm:flex" : "hidden"
           }`}
         >
@@ -91,9 +92,17 @@ const Projects = () => {
           />
 
           <GalleryCard
+            title="Oasis del Saber Branding"
+            description="complete branding for a personal growth brand. Designed all the branding and social media posts."
+            href="/branding_oasisdelsaber_compressed.pdf"
+            image={oasisDelSaberBranding}
+            textButton="Download PDF"
+          />
+
+          <GalleryCard
             title="Codign Metrics Branding"
             description="Complete branding for a Digital Marketing Company. Designed all the branding and social media posts."
-            href="/coding-metrics.pdf"
+            href="/branding_coding_metrics_compressed.pdf"
             image={codingMetricsBranding}
             textButton="Download PDF"
           />

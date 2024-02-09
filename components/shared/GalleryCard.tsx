@@ -24,7 +24,7 @@ const GalleryCard = ({
   return (
     <motion.div
       whileHover={{ scale: 1.05, rotate: "-1deg" }}
-      className="card shadow-lg lg:w-[350px] lg:h-[180px]"
+      className="card relative w-[320px] h-[230px] box-content flex flex-col items-center justify-center text-[white] rounded-[10px] border-[#d2d2d2] border-solid border-[1.3px] shadow-lg lg:w-[350px] lg:h-[250px]"
     >
       <Image src={image} alt="CarHub App" className="img" />
 
