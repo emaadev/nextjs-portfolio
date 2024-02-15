@@ -103,7 +103,7 @@ const Intro = () => {
 
             <CustomDownloadButton
               onClick={""}
-              href="/Resume.pdf"
+              href="/resume-cv.pdf"
               customClasses={""}
             >
               Download CV{" "}
