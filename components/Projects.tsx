@@ -18,6 +18,7 @@ import portfolioDesign from "@/public/compressed/portfolio-design.jpg";
 import codingMetricsBranding from "@/public/compressed/coding-metrics.jpg";
 import oasisDelSaberBranding from "@/public/compressed/oasis-del-saber.jpg";
 import aviationEcommerce from "@/public/compressed/aviation-store.jpg";
+import financialDashboard from "@/public/compressed/financial-dashboard.jpeg";
 import comingSoon from "@/public/compressed/coming-soon.jpg";
 
 const Projects = () => {
@@ -83,6 +84,14 @@ const Projects = () => {
             active === "graphic-design" ? "sm:flex" : "hidden"
           }`}
         >
+          <GalleryCard
+            title="Financial Dashboard"
+            description="Personal Financial Admin"
+            href="https://xd.adobe.com/view/abb5e1fe-d956-4404-87ea-24a397d58aa0-fee6/"
+            image={financialDashboard}
+            textButton="Go To Website"
+          />
+
           <GalleryCard
             title="UX/UI Design"
             description="E-Commerce mockup design for a real Aviation's Company located in Argentina. Developing project in progress."
