@@ -39,7 +39,7 @@ export default function RootLayout({
           property="og:image"
           content={`${process.env.NEXT_PUBLIC_BASE_URL}/opengraph-image.png`}
         />
-        <meta property="og:image:alt" content="Descripción de la imagen" />
+        <meta property="og:image:alt" content="Keep It Simple - ©emaadev" />
         <link rel="icon" href="/favicon.ico" />
         <html lang="en" />
       </Head>
