@@ -2,6 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Toaster } from "react-hot-toast";
 
+import Head from "next/head";
+
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -10,8 +12,6 @@ import ActiveNavContextProvider from "@/context/ActiveNavContextProvider";
 import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/shared/ThemeSwitch";
 import ThemeContextProvider from "@/context/ThemeContextProvider";
-
-import openGraphImage from "@/public/compressed/open-graph.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,8 +27,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <meta property="og:image" content="./opengraph-image.png" />
-      <meta property="og:image:alt" content="Keep It Simple - Emanuel" />
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+
+        {/* Configuración de Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/opengraph-image.png`}
+        />
+        <meta property="og:image:alt" content="Descripción de la imagen" />
+        <link rel="icon" href="/favicon.ico" />
+        <html lang="en" />
+      </Head>
 
       <body
         className={`${inter.className} relative bg-gray-100 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 w-[100%]`}
