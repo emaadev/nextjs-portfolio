@@ -66,7 +66,7 @@ export const webDevelopmentData = [
       "Full-Stack App with a custom API Rest for a Company. I developed the REST API on Python, you can see the code in GitHub.",
     tags: ["Next.js", "TypeScript", "Python", "TailwindCSS"],
     imageUrl: webScrapperApp,
-    github: "https://github.com/emaadev/web-scrapper-app",
+    github: "https://github.com/emaadev/scrapper-api",
     website: "https://web-scrapper-app-omega.vercel.app/",
   },
   {
