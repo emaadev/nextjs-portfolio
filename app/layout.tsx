@@ -30,7 +30,7 @@ export default function RootLayout({
       <Head>
         <meta
           property="og:image"
-          content={`${process.env.NEXT_PUBLIC_BASE_URL}/opengraph-image.png`}
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/opengraph-image.jpg`}
         />
         <meta property="og:image:alt" content="Keep It Simple - ©emaadev" />
       </Head>
