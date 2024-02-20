@@ -28,20 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-
-        {/* Configuración de Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
         <meta
           property="og:image"
           content={`${process.env.NEXT_PUBLIC_BASE_URL}/opengraph-image.png`}
         />
         <meta property="og:image:alt" content="Keep It Simple - ©emaadev" />
-        <link rel="icon" href="/favicon.ico" />
-        <html lang="en" />
       </Head>
 
       <body
