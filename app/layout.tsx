@@ -11,6 +11,8 @@ import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/shared/ThemeSwitch";
 import ThemeContextProvider from "@/context/ThemeContextProvider";
 
+import openGraphImage from "@/public/compressed/open-graph.png";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -25,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <meta property="og:image" content="../public/compressed/open-graph.png" />
+      <meta property="og:image:alt" content="Keep It Simple - Emanuel" />
+
       <body
         className={`${inter.className} relative bg-gray-100 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 w-[100%]`}
       >
