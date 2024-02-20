@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <meta property="og:image" content="../public/compressed/open-graph.png" />
+      <meta property="og:image" content="./opengraph-image.png" />
       <meta property="og:image:alt" content="Keep It Simple - Emanuel" />
 
       <body
