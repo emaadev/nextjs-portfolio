@@ -27,13 +27,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <Head>
+      {/* <Head>
         <meta
           property="og:image"
           content={`${process.env.NEXT_PUBLIC_BASE_URL}/opengraph-image.jpg`}
         />
         <meta property="og:image:alt" content="Keep It Simple - ©emaadev" />
-      </Head>
+      </Head> */}
 
       <body
         className={`${inter.className} relative bg-gray-100 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 w-[100%]`}
