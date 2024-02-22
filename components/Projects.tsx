@@ -19,6 +19,7 @@ import codingMetricsBranding from "@/public/compressed/coding-metrics.jpg";
 import oasisDelSaberBranding from "@/public/compressed/oasis-del-saber.jpg";
 import aviationEcommerce from "@/public/compressed/aviation-store.jpg";
 import financialDashboard from "@/public/compressed/financial-dashboard.jpeg";
+import bayesite from "@/public/compressed/bayesite.jpg";
 import comingSoon from "@/public/compressed/coming-soon.jpg";
 
 const Projects = () => {
@@ -84,6 +85,14 @@ const Projects = () => {
             active === "graphic-design" ? "sm:flex" : "hidden"
           }`}
         >
+          <GalleryCard
+            title="BayeSite Official Website"
+            description="UX/UI design of an AI Website, I'm developing the website for this company. Will be available in the Web Development section."
+            href="https://xd.adobe.com/view/1221c505-d31d-4239-a514-bb3c9ed0d06f-4772/?fullscreen"
+            image={bayesite}
+            textButton="View Design"
+          />
+
           <GalleryCard
             title="Financial Dashboard"
             description="Personal Financial Admin"
