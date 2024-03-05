@@ -4,12 +4,13 @@ import { MdDesignServices } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
-import webScrapperApp from "@/public/compressed/web-scrapper-app.png";
-import carhubApp from "@/public/compressed/carhub-rentcar.png";
+// import webScrapperApp from "@/public/compressed/web-scrapper-app.png";
+// import carhubApp from "@/public/compressed/carhub-rentcar.png";
 import postItApp from "@/public/compressed/postit-app.png";
 import comingSoon from "@/public/compressed/coming-soon.jpg";
 import ecommerceAdminPanel from "@/public/compressed/admin-ecommerce-panel.png";
 import ecommerceClientSide from "@/public/compressed/client-eccomerce-website.png";
+import bayesiteCode from "@/public/compressed/bayesiteit.png";
 
 // import livechatApp from "@/public/livechat-app.png";
 
@@ -42,6 +43,23 @@ export const links = [
 
 export const webDevelopmentData = [
   {
+    title: "Web Application for an IT Recruitment Company",
+    description:
+      "Complete Web Application with a CRM connected to Excel. Added Internationalization (i18n) too. AI Coming Soon to this project, it will be able to receive user data from a ChatBot integrated with OpenAI.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Framer Motion",
+      "Three.js",
+      "Google APIs",
+      "i18n",
+    ],
+    imageUrl: bayesiteCode,
+    github: "https://github.com/emaadev",
+    website: "https://www.bayesiteit.com/",
+  },
+  {
     title: "E-Commerce Client Side",
     description:
       "Next.js professional E-Commerce TailwindCSS and TypeScript. This have the client side of the project. The admin panel is in GitHub",
@@ -60,24 +78,24 @@ export const webDevelopmentData = [
     github: "https://github.com/emaadev/nextjs-mysql-ecommerce-admin",
     website: "https://nextjs-mysql-ecommerce-admin.vercel.app/",
   },
-  {
-    title: "Products Web Scrapper",
-    description:
-      "Full-Stack App with a custom API Rest for a Company. I developed the REST API on Python, you can see the code in GitHub.",
-    tags: ["Next.js", "TypeScript", "Python", "TailwindCSS"],
-    imageUrl: webScrapperApp,
-    github: "https://github.com/emaadev/scrapper-api",
-    website: "https://web-scrapper-app-omega.vercel.app/",
-  },
-  {
-    title: "CarHub",
-    description:
-      "Front-End project for a Car Rent Company. See the best car option for yourself and get more info about each car (the Car Image API is updating at the moment).",
-    tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-    imageUrl: carhubApp,
-    github: "https://github.com/emaadev/carhub-app",
-    website: "https://carhub-app-eight.vercel.app/",
-  },
+  // {
+  //   title: "Products Web Scrapper",
+  //   description:
+  //     "Full-Stack App with a custom API Rest for a Company. I developed the REST API on Python, you can see the code in GitHub.",
+  //   tags: ["Next.js", "TypeScript", "Python", "TailwindCSS"],
+  //   imageUrl: webScrapperApp,
+  //   github: "https://github.com/emaadev/scrapper-api",
+  //   website: "https://web-scrapper-app-omega.vercel.app/",
+  // },
+  // {
+  //   title: "CarHub",
+  //   description:
+  //     "Front-End project for a Car Rent Company. See the best car option for yourself and get more info about each car (the Car Image API is updating at the moment).",
+  //   tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+  //   imageUrl: carhubApp,
+  //   github: "https://github.com/emaadev/carhub-app",
+  //   website: "https://carhub-app-eight.vercel.app/",
+  // },
   {
     title: "PostIt Social App",
     description:

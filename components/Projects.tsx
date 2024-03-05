@@ -20,7 +20,7 @@ import oasisDelSaberBranding from "@/public/compressed/oasis-del-saber.jpg";
 import aviationEcommerce from "@/public/compressed/aviation-store.jpg";
 import financialDashboard from "@/public/compressed/financial-dashboard.jpeg";
 import bayesite from "@/public/compressed/bayesite.jpg";
-import comingSoon from "@/public/compressed/coming-soon.jpg";
+// import comingSoon from "@/public/compressed/coming-soon.jpg";
 
 const Projects = () => {
   const { ref } = useActiveInView("Projects", 0.2);
@@ -133,13 +133,13 @@ const Projects = () => {
             textButton="Go To Website"
           />
 
-          <GalleryCard
+          {/* <GalleryCard
             title="Coming Soon..."
             description="Uploading all my projects 🚀"
             href=""
             image={comingSoon}
             textButton="Uploading"
-          />
+          /> */}
         </motion.section>
       </>
 

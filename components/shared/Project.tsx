@@ -84,7 +84,7 @@ const Project = ({
             src={imageUrl}
             alt={title}
             quality={100}
-            className="group-hover:scale-105 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition hidden sm:block absolute -right-12 sm:-right-[160px] top-32 sm:top-8 w-[250px] sm:w-[480px] rounded-[10px]"
+            className="group-hover:scale-110 group-hover:-translate-x-10 group-hover:translate-y-3 group-hover:-rotate-2 transition hidden sm:block absolute -right-12 sm:-right-[250px] top-32 sm:top-20 w-[250px] sm:w-[600px] rounded-[10px]"
           />
         </section>
       </motion.div>
