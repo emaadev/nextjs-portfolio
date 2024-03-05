@@ -51,7 +51,9 @@ export default function RootLayout({
 
             <Toaster position="bottom-center" />
 
-            <ThemeSwitch />
+            <div className="w-[70%] flex justify-center">
+              <ThemeSwitch />
+            </div>
           </ActiveNavContextProvider>
         </ThemeContextProvider>
 
