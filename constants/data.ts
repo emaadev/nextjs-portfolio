@@ -151,7 +151,6 @@ export const techSkills = [
   "CSS3",
   "Bootstrap",
   "SEO",
-  "Object-Oriented Programming",
   "SASS",
   "JavaScript",
   "TypeScript",
@@ -159,20 +158,11 @@ export const techSkills = [
   "Next.js",
   "Python",
   "Node.js",
-  "PHP",
-  "jQuery",
-  "MySQL",
-  "Git",
-  "TailwindCSS",
   "Express",
-  "Framer Motion",
-  "Photoshop",
-  "Lightroom",
-  "After Effects",
-  "Illustrator",
-  "Figma",
-  "AdobeXd",
-  "Responsive Design",
+  "MySQL",
+  "MongoDB",
+  "Git / Github",
+  "TailwindCSS",
 ] as const;
 
 export const softSkills = [
@@ -191,9 +181,19 @@ export const softSkills = [
 
 export const experiencesData = [
   {
-    title: "Freelancer | Front-End to Full-Stack Dev",
+    title: "BayeSite | Web Developer & IT Recruiter",
+    location: "Argentina",
+    description: `At BayeSite, I led the development of a web application that revolutionizes talent recruitment, combining Next.js with agile methodologies to improve user-company interaction.`,
+    keyAchievements: [
+      "As a technical recruiter, my development background influences candidate selection, looking for both technical skill and creative innovation. This duality of roles has deepened my understanding of technological impact, contributing to business growth and career advancement of connected talent.",
+    ],
+    icon: React.createElement(SiNextdotjs),
+    date: "2024 - present",
+  },
+  {
+    title: "Freelancer | Web Developer",
     location: "Bs As, Argentina",
-    description: `I'm working as a Front-End Developer freelance while I'm studying Full-Stack Development. My stack includes React, Next.js, TypeScript, TailwindCSS and Python. 
+    description: `I'm working as a Web Developer freelance while I'm studying Full-Stack Development. My stack includes React, Next.js, TypeScript, TailwindCSS and Python. 
     \n I'm now looking to full-time opportunities.`,
     keyAchievements: [],
     icon: React.createElement(SiNextdotjs),
@@ -203,7 +203,7 @@ export const experiencesData = [
     title: "Fixdate | Front-End Developer",
     location: "Santa Catarina, Brazil",
     description:
-      "I worked as a Front End Developer on this startup for 2 years. I developed projects in PHP, jQuery, MySQL, React.js and Python.",
+      "I worked as a Front End Developer on this startup for 2 years. I developed projects in JavaScript, Node.js, React.js, Python and MySQL working with Git/Github.",
     keyAchievements: [
       "Analyzed and designed UX/UI designs for technical feasibility.",
       "Created sales strategies to improve company's income",
@@ -215,14 +215,13 @@ export const experiencesData = [
   {
     title: "ISEAP | Graphic Designer & Web Developer",
     location: "Bs As, Argentina",
-    description:
-      "I worked as a Graphic Designer & Web Developer freelance on this company for 3 years.",
+    description: "I worked as a Graphic Designer & Web Developer freelance.",
     keyAchievements: [
       "Created and designed over +100 graphic and audiovisuals projects with Adobe Photoshop, Illutrator, After Effects and Premiere Pro.",
       "Implemented websites and landing pages from concept through development",
     ],
     icon: React.createElement(MdDesignServices),
-    date: "2020 - 2023",
+    date: "2019 - 2023",
   },
   {
     title: "PSA | Graphic Designer",

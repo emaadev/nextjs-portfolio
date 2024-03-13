@@ -34,16 +34,6 @@ const About = () => {
         <span className="font-medium">Full-Stack Development</span>.
       </p>
 
-      <p className="mb-3">
-        Lately, I would like to dedicate more time to study{" "}
-        <span className="font-medium">iOS Apps Development</span> in{" "}
-        <span className="font-medium">Swift</span> and{" "}
-        <span className="font-medium">Cross-platform Development</span> in{" "}
-        <span className="font-medium">Flutter</span>.{" "}
-        <span className="font-medium">I always work with an open mind</span> to
-        acquire the necessary technologies.
-      </p>
-
       <p>
         <span className="italic">When I'm not coding</span>, I like to read
         personal growth books, play video games and visit unknown places.
