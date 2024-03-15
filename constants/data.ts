@@ -9,7 +9,8 @@ import { SiNextdotjs } from "react-icons/si";
 import postItApp from "@/public/compressed/postit-app.png";
 import comingSoon from "@/public/compressed/coming-soon.jpg";
 import ecommerceAdminPanel from "@/public/compressed/admin-ecommerce-panel.png";
-import ecommerceClientSide from "@/public/compressed/client-eccomerce-website.png";
+// import ecommerceClientSide from "@/public/compressed/client-eccomerce-website.png";
+import aviationStore from "@/public/compressed/aviation-store.png";
 import bayesiteCode from "@/public/compressed/bayesiteit.png";
 
 // import livechatApp from "@/public/livechat-app.png";
@@ -45,7 +46,7 @@ export const webDevelopmentData = [
   {
     title: "Web Application for an IT Recruitment Company",
     description:
-      "Complete Web Application with a CRM connected to Excel. Added Internationalization (i18n) too. AI Coming Soon to this project, it will be able to receive user data from a ChatBot integrated with OpenAI.",
+      "Complete Web Application with a CRM. Added Internationalization (i18n). AI Coming Soon to this project, it will be able to receive user data from a ChatBot integrated with OpenAI.",
     tags: [
       "Next.js",
       "TypeScript",
@@ -60,14 +61,20 @@ export const webDevelopmentData = [
     website: "https://www.bayesiteit.com/",
   },
   {
-    title: "E-Commerce Client Side",
+    title: "E-Commerce for an Aeronautical Business",
     description:
-      "Next.js professional E-Commerce TailwindCSS and TypeScript. This have the client side of the project. The admin panel is in GitHub",
-    tags: ["Next.js", "TypeScript", "TailwindCSS", "Axios", "HeadlessUI"],
-    imageUrl: ecommerceClientSide,
-    github:
-      "https://github.com/emaadev/nextjs-mysql-ecommerce-client/blob/main/package.json",
-    website: "https://nextjs-mysql-ecommerce-client.vercel.app/",
+      "E-Commerce for an Aeronautical Company. It has dynamic routes, navigation and a connection to the WhatsApp API service to checkout products. It will have a CRM built with Next.js and Python connected to a MySQL database, also a connection to MercadoPago to checkout.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Python",
+      "MySQL",
+      "MercadoPago API",
+      "WhatsApp API",
+    ],
+    imageUrl: aviationStore,
+    github: "https://github.com/emaadev/nextjs-aviation-store/tree/main",
+    website: "https://nextjs-aviation-store.vercel.app/",
   },
   {
     title: "Professional Admin Panel",
