@@ -74,7 +74,7 @@ export const webDevelopmentData = [
     ],
     imageUrl: aviationStore,
     github: "https://github.com/emaadev/nextjs-aviation-store/tree/main",
-    website: "https://nextjs-aviation-store.vercel.app/",
+    website: "https://iseap-store.vercel.app/",
   },
   {
     title: "Professional Admin Panel",
