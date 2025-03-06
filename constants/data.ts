@@ -12,6 +12,7 @@ import ecommerceAdminPanel from "@/public/compressed/admin-ecommerce-panel.png";
 // import ecommerceClientSide from "@/public/compressed/client-eccomerce-website.png";
 import aviationStore from "@/public/compressed/aviation-store.png";
 import bayesiteCode from "@/public/compressed/bayesiteit.png";
+import ine from "@/public/compressed/ine-com.png";
 
 // import livechatApp from "@/public/livechat-app.png";
 
@@ -43,6 +44,21 @@ export const links = [
 ] as const;
 
 export const webDevelopmentData = [
+  {
+    title: "Leading the Main Company Website at INE",
+    description:
+      "I rebuilt the platform from nearly scratch, making significant improvements to SEO, accessibility, and performance. Now I'm leading the main site at ine.com, built with Next.js, TypeScript, and Hygraph. I work closely with the marketing and product teams to deliver a complete web application with a CRM.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Hygraph CMS",
+      "Hubspot",
+    ],
+    imageUrl: ine,
+    github: "https://github.com/emaadev",
+    website: "https://www.ine.com/",
+  },
   {
     title: "Web Application for an IT Recruitment Company",
     description:
@@ -163,6 +179,7 @@ export const techSkills = [
   "TypeScript",
   "React.js",
   "Next.js",
+  "Vue 2",
   "Python",
   "Node.js",
   "Express",
@@ -188,6 +205,19 @@ export const softSkills = [
 
 export const experiencesData = [
   {
+    title: "INE | Web Developer & Technical SEO",
+    location: "Cary, NC, United States",
+    description: `I'm leading the main site at ine.com, also working in the front-end side of the main applications of INE: <u><a href="https://www.checkout.ine.com" target="_blank">checkout.ine.com</a></u> & <u><a href="https://www.my.ine.com" target="_blank">my.ine.com</a></u>. I work closely with the marketing and product teams to deliver a complete web application with a CRM.`,
+    keyAchievements: [
+      "Rebuilt the platform from nearly scratch.",
+      "Making significant improvements to SEO",
+      "Improving accessibility",
+      "Improving performance",
+    ],
+    icon: React.createElement(SiNextdotjs),
+    date: "2024 - present (1 year)",
+  },
+  {
     title: "BayeSite | Web Developer & IT Recruiter",
     location: "Argentina",
     description: `At BayeSite, I led the development of a web application that revolutionizes talent recruitment, combining Next.js with agile methodologies to improve user-company interaction.`,
@@ -195,7 +225,7 @@ export const experiencesData = [
       "As a technical recruiter, my development background influences candidate selection, looking for both technical skill and creative innovation. This duality of roles has deepened my understanding of technological impact, contributing to business growth and career advancement of connected talent.",
     ],
     icon: React.createElement(SiNextdotjs),
-    date: "2024 - present",
+    date: "2024 (3 months)",
   },
   {
     title: "Freelancer | Web Developer",
@@ -204,7 +234,7 @@ export const experiencesData = [
     \n I'm now looking to full-time opportunities.`,
     keyAchievements: [],
     icon: React.createElement(SiNextdotjs),
-    date: "2023 - present",
+    date: "2023 - 2024 (1 year)",
   },
   {
     title: "Fixdate | Front-End Developer",
@@ -217,7 +247,7 @@ export const experiencesData = [
       "Mentored junior developers and worked closely with the CEO Company.",
     ],
     icon: React.createElement(FaReact),
-    date: "2021 - 2023",
+    date: "2021 - 2023 (2 years)",
   },
   {
     title: "ISEAP | Graphic Designer & Web Developer",
@@ -228,7 +258,7 @@ export const experiencesData = [
       "Implemented websites and landing pages from concept through development",
     ],
     icon: React.createElement(MdDesignServices),
-    date: "2019 - 2023",
+    date: "2019 - 2023 (4 years)",
   },
   {
     title: "PSA | Graphic Designer",
@@ -238,6 +268,6 @@ export const experiencesData = [
       "Created and designed over +50 graphic and audiovisuals projects with Adobe Photoshop, Illutrator.",
     ],
     icon: React.createElement(SiAdobephotoshop),
-    date: "2019 - 2020",
+    date: "2019 (1 year)",
   },
 ] as const;

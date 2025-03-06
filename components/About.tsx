@@ -18,27 +18,9 @@ const About = () => {
       <h2 className="text-center">About Me</h2>
 
       <p className="mb-3">
-        While I was starting my studies to be an{" "}
-        <span className="font-medium">Information System Engineer</span>, I
-        decided to build my passion for technology,{" "}
-        <span className="font-medium">Graphic Design</span> and{" "}
-        <span className="font-medium">Software Development</span>.
-      </p>
+        While pursuing my degree in Information Systems Engineering, I discovered my passion for technology, graphic design, and software development. Over the years, I've focused on creating audiovisual products and have built extensive experience in both graphic design and front-end development. More recently, I've expanded into full-stack projects, combining a keen eye for design with robust technical skills to deliver engaging digital experiences.
 
-      <p className="mb-3">
-        I am dedicated to the creation of{" "}
-        <span className="italic">audiovisual products</span> with{" "}
-        <span className="font-medium">several years of experience</span> in
-        Graphic Design and professional Front-End development projects focused
-        on working in{" "}
-        <span className="font-medium">Full-Stack Development</span>.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I like to read
-        personal growth books, play video games and visit unknown places.
-        Playing guitar and exercising are my favorite passions and I can't live
-        without doing them at least once a day.
+        When I’m not coding, I enjoy reading personal development books, exploring new places, and doing workout. Playing guitar and staying active are also essential parts of my daily routine—they keep me balanced and inspired.
       </p>
     </motion.section>
   );

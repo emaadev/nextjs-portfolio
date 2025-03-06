@@ -81,7 +81,7 @@ const Projects = () => {
           initial={{ opacity: 0, x: 50, originZ: 0.7 }}
           animate={{ opacity: 1, x: 0, originZ: 1 }}
           transition={{ duration: 0.4 }}
-          className={`flex flex-wrap justify-center mx-auto w-[70%] gap-4 mb-8 ${
+          className={`flex flex-wrap justify-center mx-auto w-[80%] gap-4 mb-8 ${
             active === "graphic-design" ? "sm:flex" : "hidden"
           }`}
         >

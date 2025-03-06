@@ -51,9 +51,7 @@ const Experience = () => {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="!mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-gray-400">
-                {item.description}
-              </p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-gray-400" dangerouslySetInnerHTML={{__html: item.description}} />
 
               {item.keyAchievements.length > 0 && (
                 <p className="!mt-4 text-gray-600 dark:text-gray-300">

@@ -65,22 +65,11 @@ const Intro = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="mb-10 mt-4 px-3 text-[1rem] leading-[1.5] text-center sm:text-[1.5rem] lg:text-[1.3rem] lg:text-left lg:pt-[50px]"
+            className="mb-10 mt-4 px-3 text-[1rem] leading-[1.5] text-center sm:text-[1.5rem] lg:text-[1.3rem] lg:text-left lg:pt-[50px] max-w-[800px]"
           >
-            <span className="font-bold">Hi! I'm Emanuel.</span> <br />
-            <span className="font-bold job-title">
-              Front-End Developer & Graphic Designer
-            </span>{" "}
-            <br className="sm:hidden" />
-            with <span className="font-bold">+4 years</span> of experience.{" "}
-            <br /> <br />
-            My focus is now{" "}
-            <span className="underline font-bold">React (Next. js)</span> to be{" "}
-            <span className="underline font-bold">Full-Stack Developer</span>.{" "}
-            {/* <br />
-        I'm also learning <span className="font-bold">
-          iOS Development
-        </span> on <span className="font-bold">Swift</span> 📚 */}
+            Hey there! <br />
+            I'm Ema, a <b>Web Developer</b> & <b>Graphic Designer</b> with 5+ years of professional experience. <br /><br />
+            I specialize in building scalable applications using <b>Next.js</b> and <b>TypeScript</b>, blending eye-catching design with a solid architecture. I help businesses and startups take their projects to the next level, focusing on performance, accessibility, and user experience.
           </motion.h1>
 
           <motion.div
@@ -97,7 +86,7 @@ const Intro = () => {
               href="#contact"
               customClasses={""}
             >
-              Contact Me!{" "}
+              Contact Me{" "}
               <BsArrowRight className="group-hover:translate-x-1.5 transition" />
             </CustomBlackButton>
 
